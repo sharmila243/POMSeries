@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OpenCart Regression Suite" thread-count="4" parallel="tests" verbose="4">
+	
+	<listeners>
+		<listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" />
+	</listeners>
+
+	<test name="LoginPage Test">
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="Accounts Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.AccountsPageTest" />
+		</classes>
+	</test>
+
+
+	<test name="ProductInfo Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Register Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	<!-- DeadLock: 
+			- Now we have thread count = 4, limited threads
+			- what if have more number of threads??? - Problems
+ 			- Deadlock Conditio
+ 				- Now for the 4 tests, we have 4 test results PASS/FAIL - we've to combine all of them for Extent/Allure/html reports
+ 				- execution time for different tests will be different based on the test cases in a test - depends on test to test class
+ 				- When we supply the entire execution to the report, chances are there that reports might not come properly - Data Loss
+		 				- Everything looks easy in the console but when we dump the data to the report there is a chance of DataLoss]
+						- Account page test might overwrite login page Test
+ 		   					- Each and every test page will go to base test - initDriver - initProperties - driver -   and so on 
+ 					 			- likwise all the n no.of testPages will create n no.of Drivers, there might be a possibility of driver clash
+ 								- one driver blocks another driver - we might get some unexpected data/unexpected execution
+ 								- Driver might get Lost/ or might not be able to interact with webElement/ or might go to wait state - deadLock State
+ 								- Happens in MultiThread Environment
+ 									- No.of threads are hitting the server together
+ 									- they're clashing with eachother
+ 									- they're interacting with respective resource(test Classes)
+ 										- in those test Classes execution driver might be in wait condition/deadlock state - execution will be terminated
+ 										- or execution will go in infinite mode and then execution stops automatically and get some unexpected results
+ 											- possible in multi threading environment
+ 			
+ 			- Solution: ThreadLocal Class in java introduced in Jdk1.8	
+ 							- ThreadLocal - give me the local copy of the resource/driver
+							- every thread will get the individual copy of the driver
+							- these drivers are independent of eachother, never clash any driver/thread
+							
+							- ThreadLocal - Has 2 methods
+								- set() - to initialize threadLocal on a specific Resource
+								- get()	 - to fetch the local copy of the thread
+	 	-->
+	 	
+	 	<!-- 
+	 		- To run with maven using mvn clean install -Denv="qa"
+	 		- right click on the project - runAs - Maven build - clean install -Denv
+	 	-->
+	 	
+	 	<!-- 
+	 		- to run the test cases from testng.xml file using maven
+	 		- go to pom.xml file add plugin - sureFirePlugin & compiler plugin
+	 		
+	 		- ORDER 
+	 		- mven clean install 
+	 			- pom.xml - check all dependencies and plugins
+	 			- compile the java code under src/main/java and src/test/java
+	 			- comes to surefireplgin after java code got compiled - and then run the test cases basis on suite.xml file in configuration file - regression.xml
+	 			- checks if parallel execution etc things 
+	 			- then testng will take over 
+	 				and tests will be running as testng.xml file   
+	 	-->
+	 	
+	 	<!-- 
+	 		- Parallel Execution and thread control is constrolled by testng not by maven 
+	 		- Maven is just picking up by pom.xml
+	 			- Maven is going to compile the code 
+	 			- and run the test cases based on testng_regression.xml file 
+	 	-->
+	
+	
+
+</suite> 
