@@ -19,7 +19,7 @@ public class LoginPage { //Example of Encapsulation
 	private By emailId = By.id("input-email");
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[contains(@class, 'btn-primary')]");
-	private By forgotPwdLink = By.linkText("Forgotten Password11");
+	private By forgotPwdLink = By.linkText("Forgotten Password");
 	private By registerLink = By.linkText("Register");
 	
 	
