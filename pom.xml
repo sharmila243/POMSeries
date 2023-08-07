@@ -33,7 +33,7 @@
 			<artifactId>testng</artifactId>
 			<version>7.6.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -59,7 +59,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-					<!-- Compile the code within src/main/java and src/test/java-->
+				<!-- Compile the code within src/main/java and src/test/java-->
 				<version>3.8.1</version>
 				<configuration>
 					<source>1.8</source>
@@ -71,12 +71,14 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-					<!-- Once the project is compiled, surefire plugin is used to run my test cases
-							- Surefireplugin will run the testcases based on testng.xml that we've created
-							- check suiteXlFile in Configuartion
+				<!-- Once the project is compiled, surefire plugin is used to
+				run my test cases
+							- Surefireplugin will run the testcases
+				based on testng.xml that we've created
+							- check
+				suiteXlFile in Configuartion
 					-->
 				<version>2.20</version>
-
 
 
 				<configuration>
@@ -87,6 +89,10 @@
 							src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 					</suiteXmlFiles>
+
+					<argLine>
+						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+					</argLine>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -21,6 +21,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.qa.opencart.driverfactory.DriverFactory;
 
+import io.qameta.allure.Step;
+
 //import CustomException.FrameworkException;
 
 public class ElementUtil {
@@ -49,6 +51,7 @@ public class ElementUtil {
 		//So driver also will be static here 
 		//driver also goes to CMA
 		//We cannot use it for parallel execution
+	@Step("Enetering value {1} in the locator: {0}")
 	public void doSendkeys(By locator, String value) {
 		
 		if(value == null) {
@@ -59,7 +62,7 @@ public class ElementUtil {
 		getElement(locator).sendKeys(value);;
 	}
 	
-	
+	@Step("click on the locator: {0}")
 	public void doClick(By locator) {
 		getElement(locator).click();
 	}
@@ -100,7 +103,7 @@ public class ElementUtil {
 			}
 	}
 	
-	
+	@Step("Getting element for locator: {0}")
 	public WebElement getElement(By locator) {
 		
 		WebElement element = driver.findElement(locator);
@@ -427,6 +430,8 @@ public class ElementUtil {
 	 * @param titleValue
 	 * @return
 	 */
+	
+	@Step("An expectation for checking the title of a page")
 	public String waitForTitleIs(String titleValue, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		
@@ -449,6 +454,7 @@ public class ElementUtil {
 	 * @param urlFraction
 	 * @return
 	 */
+	@Step("An expectation for the URL of the current page to contain specific text")
 	public String waitForURLContains(int timeOut, String urlFraction) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut)) ;
 		

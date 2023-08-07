@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Open Cart Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 1, 2023 08:06:56 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 7, 2023 01:26:35 pm</span></a>
 </li>
 </ul>
 </div>
@@ -78,6 +78,7 @@
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,7 +86,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">AccountsPageTest</a><a class="dropdown-item" href="#">ProductInfoPageTest</a><a class="dropdown-item" href="#">OpenCartRegressionSuite</a><a class="dropdown-item" href="#">RegisterPageTest</a>
+<a class="dropdown-item" href="#">OpenCartRegressionSuite</a><a class="dropdown-item" href="#">AccountsPageTest</a><a class="dropdown-item" href="#">LoginPageTest</a><a class="dropdown-item" href="#">ProductInfoPageTest</a>
 </ul>
 </li>
 </ul>
@@ -98,7 +99,7 @@
           <div class="test-detail">
             <p class="name">URLTest</p>
             <p class="text-sm">
-              <span>8:07:08 pm</span> / <span>00:00:00:487</span>
+              <span>1:26:51 pm</span> / <span>00:00:00:534</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -107,9 +108,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">URLTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:08 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:09 pm</span>
-<span class='badge badge-default'>00:00:00:487</span>
+<span class='badge badge-success'>08.07.2023 1:26:51 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:52 pm</span>
+<span class='badge badge-default'>00:00:00:534</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -124,7 +125,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:09 pm</td>
+        <td>1:26:52 pm</td>
         <td>
           Test passed
         </td>
@@ -134,25 +135,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
             <p class="name">forgotPwdLinkExistenceTest</p>
             <p class="text-sm">
-              <span>8:07:09 pm</span> / <span>00:00:10:319</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>1:26:52 pm</span> / <span>00:00:10:468</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">forgotPwdLinkExistenceTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:09 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:19 pm</span>
-<span class='badge badge-default'>00:00:10:319</span>
+<h5 class="test-status text-skip">forgotPwdLinkExistenceTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:52 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:02 pm</span>
+<span class='badge badge-default'>00:00:10:468</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -166,20 +167,20 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>8:07:20 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:27:03 pm</td>
         <td>
           <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.114, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/t2/myfd4x4j6pg...}, goog:chromeOptions: {debuggerAddress: localhost:52871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52871/devtoo..., se:cdpVersion: 115.0.5790.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/t2/myfd4x4j6pg...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50645/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a44d539a56aa754d848e03b5fc411e
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:379)
-	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:48)
-	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistenceTest(LoginPageTest.java:25)
+	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:382)
+	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:53)
+	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistenceTest(LoginPageTest.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -205,7 +206,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </textarea>
           
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1690900640574.png' src="/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1690900640574.png">
+<img data-featherlight='/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395023134.png' src="/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395023134.png">
     <div class="title">forgotPwdLinkExistenceTest</div>
     </div></div>
         </td>
@@ -217,12 +218,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
-          tag="OpenCartRegressionSuite ProductInfoPageTest"
+          tag="OpenCartRegressionSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">productHeaderTest</p>
+            <p class="name">accPageHeadersCountTest</p>
             <p class="text-sm">
-              <span>8:07:12 pm</span> / <span>00:00:04:762</span>
+              <span>1:26:53 pm</span> / <span>00:00:00:896</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -230,16 +231,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productHeaderTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:12 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:17 pm</span>
-<span class='badge badge-default'>00:00:04:762</span>
+<h5 class="test-status text-pass">accPageHeadersCountTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:53 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:54 pm</span>
+<span class='badge badge-default'>00:00:00:896</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -248,7 +249,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:17 pm</td>
+        <td>1:26:54 pm</td>
         <td>
           Test passed
         </td>
@@ -260,12 +261,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="4"
           author=""
-          tag="OpenCartRegressionSuite RegisterPageTest"
+          tag="OpenCartRegressionSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">userRegistrationTest</p>
+            <p class="name">accPageHeadersTest</p>
             <p class="text-sm">
-              <span>8:07:15 pm</span> / <span>00:00:09:728</span>
+              <span>1:26:54 pm</span> / <span>00:00:00:258</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -273,16 +274,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRegistrationTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:15 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:24 pm</span>
-<span class='badge badge-default'>00:00:09:728</span>
+<h5 class="test-status text-pass">accPageHeadersTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:54 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:54 pm</span>
+<span class='badge badge-default'>00:00:00:258</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">RegisterPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -291,7 +292,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:24 pm</td>
+        <td>1:26:54 pm</td>
         <td>
           Test passed
         </td>
@@ -306,9 +307,9 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
           tag="OpenCartRegressionSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">accPageHeadersCountTest</p>
+            <p class="name">accPageTitleTest</p>
             <p class="text-sm">
-              <span>8:07:16 pm</span> / <span>00:00:01:382</span>
+              <span>1:26:54 pm</span> / <span>00:00:00:023</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -316,10 +317,10 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">accPageHeadersCountTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:16 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:18 pm</span>
-<span class='badge badge-default'>00:00:01:382</span>
+<h5 class="test-status text-pass">accPageTitleTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:54 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:54 pm</span>
+<span class='badge badge-default'>00:00:00:023</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -334,7 +335,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:18 pm</td>
+        <td>1:26:54 pm</td>
         <td>
           Test passed
         </td>
@@ -346,12 +347,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="6"
           author=""
-          tag="OpenCartRegressionSuite ProductInfoPageTest"
+          tag="OpenCartRegressionSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">productHeaderTest</p>
+            <p class="name">isLogoutLinkExistTest</p>
             <p class="text-sm">
-              <span>8:07:17 pm</span> / <span>00:00:04:932</span>
+              <span>1:26:54 pm</span> / <span>00:00:00:572</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -359,16 +360,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productHeaderTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:17 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:22 pm</span>
-<span class='badge badge-default'>00:00:04:932</span>
+<h5 class="test-status text-pass">isLogoutLinkExistTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:54 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:55 pm</span>
+<span class='badge badge-default'>00:00:00:572</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
+<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -377,7 +378,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:22 pm</td>
+        <td>1:26:55 pm</td>
         <td>
           Test passed
         </td>
@@ -392,9 +393,9 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
           tag="OpenCartRegressionSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">accPageHeadersTest</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>8:07:18 pm</span> / <span>00:00:00:301</span>
+              <span>1:26:55 pm</span> / <span>00:00:01:735</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -402,10 +403,10 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">accPageHeadersTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:18 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:18 pm</span>
-<span class='badge badge-default'>00:00:00:301</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:55 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:57 pm</span>
+<span class='badge badge-default'>00:00:01:735</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -420,7 +421,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:18 pm</td>
+        <td>1:26:57 pm</td>
         <td>
           Test passed
         </td>
@@ -432,12 +433,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="8"
           author=""
-          tag="OpenCartRegressionSuite AccountsPageTest"
+          tag="OpenCartRegressionSuite ProductInfoPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">accPageTitleTest</p>
+            <p class="name">productHeaderTest</p>
             <p class="text-sm">
-              <span>8:07:18 pm</span> / <span>00:00:00:047</span>
+              <span>1:26:56 pm</span> / <span>00:00:05:279</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -445,16 +446,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">accPageTitleTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:18 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:18 pm</span>
-<span class='badge badge-default'>00:00:00:047</span>
+<h5 class="test-status text-pass">productHeaderTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:56 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:01 pm</span>
+<span class='badge badge-default'>00:00:05:279</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
+<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -463,7 +464,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:18 pm</td>
+        <td>1:27:01 pm</td>
         <td>
           Test passed
         </td>
@@ -478,9 +479,9 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
           tag="OpenCartRegressionSuite AccountsPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">isLogoutLinkExistTest</p>
+            <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>8:07:18 pm</span> / <span>00:00:00:647</span>
+              <span>1:26:57 pm</span> / <span>00:00:01:253</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -488,10 +489,10 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">isLogoutLinkExistTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:18 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:19 pm</span>
-<span class='badge badge-default'>00:00:00:647</span>
+<h5 class="test-status text-pass">searchTest</h5>
+<span class='badge badge-success'>08.07.2023 1:26:57 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:58 pm</span>
+<span class='badge badge-default'>00:00:01:253</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -506,7 +507,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:19 pm</td>
+        <td>1:26:58 pm</td>
         <td>
           Test passed
         </td>
@@ -523,7 +524,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
           <div class="test-detail">
             <p class="name">searchTest</p>
             <p class="text-sm">
-              <span>8:07:19 pm</span> / <span>00:00:02:912</span>
+              <span>1:26:58 pm</span> / <span>00:00:01:373</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -532,9 +533,9 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:19 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:22 pm</span>
-<span class='badge badge-default'>00:00:02:912</span>
+<span class='badge badge-success'>08.07.2023 1:26:58 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:26:59 pm</span>
+<span class='badge badge-default'>00:00:01:373</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -549,7 +550,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:22 pm</td>
+        <td>1:26:59 pm</td>
         <td>
           Test passed
         </td>
@@ -561,12 +562,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="11"
           author=""
-          tag="OpenCartRegressionSuite LoginPageTest"
+          tag="OpenCartRegressionSuite ProductInfoPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginPageTitleTest</p>
+            <p class="name">productHeaderTest</p>
             <p class="text-sm">
-              <span>8:07:20 pm</span> / <span>00:00:00:064</span>
+              <span>1:27:01 pm</span> / <span>00:00:02:809</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -574,16 +575,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginPageTitleTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:20 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:20 pm</span>
-<span class='badge badge-default'>00:00:00:064</span>
+<h5 class="test-status text-pass">productHeaderTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:01 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:04 pm</span>
+<span class='badge badge-default'>00:00:02:809</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -592,7 +593,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:20 pm</td>
+        <td>1:27:04 pm</td>
         <td>
           Test passed
         </td>
@@ -602,25 +603,25 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="12"
+        <li class="test-item"  status="skip" test-id="12"
           author=""
           tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">loginTest</p>
+            <p class="name">forgotPwdLinkExistenceTest</p>
             <p class="text-sm">
-              <span>8:07:20 pm</span> / <span>00:00:05:439</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:27:03 pm</span> / <span>00:00:10:206</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">loginTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:20 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:26 pm</span>
-<span class='badge badge-default'>00:00:05:439</span>
+<h5 class="test-status text-skip">forgotPwdLinkExistenceTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:03 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:13 pm</span>
+<span class='badge badge-default'>00:00:10:206</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -634,10 +635,48 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:26 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:27:13 pm</td>
         <td>
-          Test passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/t2/myfd4x4j6pg...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50645/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a44d539a56aa754d848e03b5fc411e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:382)
+	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:53)
+	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistenceTest(LoginPageTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395033594.png' src="/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395033594.png">
+    <div class="title">forgotPwdLinkExistenceTest</div>
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -647,12 +686,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="13"
           author=""
-          tag="OpenCartRegressionSuite AccountsPageTest"
+          tag="OpenCartRegressionSuite ProductInfoPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">productHeaderTest</p>
             <p class="text-sm">
-              <span>8:07:22 pm</span> / <span>00:00:01:969</span>
+              <span>1:27:04 pm</span> / <span>00:00:04:416</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -660,16 +699,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:22 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:24 pm</span>
-<span class='badge badge-default'>00:00:01:969</span>
+<h5 class="test-status text-pass">productHeaderTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:04 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:09 pm</span>
+<span class='badge badge-default'>00:00:04:416</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
+<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -678,7 +717,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:24 pm</td>
+        <td>1:27:09 pm</td>
         <td>
           Test passed
         </td>
@@ -693,9 +732,9 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
           tag="OpenCartRegressionSuite ProductInfoPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">productHeaderTest</p>
+            <p class="name">productImagesCountTest</p>
             <p class="text-sm">
-              <span>8:07:22 pm</span> / <span>00:00:02:690</span>
+              <span>1:27:09 pm</span> / <span>00:00:03:485</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -703,10 +742,10 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productHeaderTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:22 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:25 pm</span>
-<span class='badge badge-default'>00:00:02:690</span>
+<h5 class="test-status text-pass">productImagesCountTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:09 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:12 pm</span>
+<span class='badge badge-default'>00:00:03:485</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -721,7 +760,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:26 pm</td>
+        <td>1:27:12 pm</td>
         <td>
           Test passed
         </td>
@@ -733,12 +772,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="15"
           author=""
-          tag="OpenCartRegressionSuite AccountsPageTest"
+          tag="OpenCartRegressionSuite ProductInfoPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">searchTest</p>
+            <p class="name">productImagesCountTest</p>
             <p class="text-sm">
-              <span>8:07:24 pm</span> / <span>00:00:00:910</span>
+              <span>1:27:12 pm</span> / <span>00:00:04:069</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -746,16 +785,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">searchTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:24 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:24 pm</span>
-<span class='badge badge-default'>00:00:00:910</span>
+<h5 class="test-status text-pass">productImagesCountTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:12 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:16 pm</span>
+<span class='badge badge-default'>00:00:04:069</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">AccountsPageTest</span></div>
+<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -764,7 +803,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:24 pm</td>
+        <td>1:27:16 pm</td>
         <td>
           Test passed
         </td>
@@ -774,31 +813,31 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="16"
+        <li class="test-item"  status="skip" test-id="16"
           author=""
-          tag="OpenCartRegressionSuite RegisterPageTest"
+          tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">userRegistrationTest</p>
+            <p class="name">forgotPwdLinkExistenceTest</p>
             <p class="text-sm">
-              <span>8:07:24 pm</span> / <span>00:00:04:361</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:27:13 pm</span> / <span>00:00:10:387</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRegistrationTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:24 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:29 pm</span>
-<span class='badge badge-default'>00:00:04:361</span>
+<h5 class="test-status text-skip">forgotPwdLinkExistenceTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:13 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:23 pm</span>
+<span class='badge badge-default'>00:00:10:387</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">RegisterPageTest</span></div>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -806,10 +845,48 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:29 pm</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>1:27:24 pm</td>
         <td>
-          Test passed
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/t2/myfd4x4j6pg...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50645/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a44d539a56aa754d848e03b5fc411e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:382)
+	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:53)
+	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistenceTest(LoginPageTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395044243.png' src="/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395044243.png">
+    <div class="title">forgotPwdLinkExistenceTest</div>
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -824,7 +901,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
           <div class="test-detail">
             <p class="name">productImagesCountTest</p>
             <p class="text-sm">
-              <span>8:07:26 pm</span> / <span>00:00:02:679</span>
+              <span>1:27:16 pm</span> / <span>00:00:01:642</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -833,9 +910,9 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">productImagesCountTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:26 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:29 pm</span>
-<span class='badge badge-default'>00:00:02:679</span>
+<span class='badge badge-success'>08.07.2023 1:27:16 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:18 pm</span>
+<span class='badge badge-default'>00:00:01:642</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -850,7 +927,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:29 pm</td>
+        <td>1:27:18 pm</td>
         <td>
           Test passed
         </td>
@@ -862,55 +939,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="18"
           author=""
-          tag="OpenCartRegressionSuite RegisterPageTest"
-          device="">
-          <div class="test-detail">
-            <p class="name">userRegistrationTest</p>
-            <p class="text-sm">
-              <span>8:07:29 pm</span> / <span>00:00:02:655</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">userRegistrationTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:29 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:31 pm</span>
-<span class='badge badge-default'>00:00:02:655</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">RegisterPageTest</span></div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:31 pm</td>
-        <td>
-          Test passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="19"
-          author=""
           tag="OpenCartRegressionSuite ProductInfoPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">productImagesCountTest</p>
+            <p class="name">productMasterDataInfoTest</p>
             <p class="text-sm">
-              <span>8:07:29 pm</span> / <span>00:00:01:475</span>
+              <span>1:27:18 pm</span> / <span>00:00:04:859</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -918,11 +952,11 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productImagesCountTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:29 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:30 pm</span>
-<span class='badge badge-default'>00:00:01:475</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<h5 class="test-status text-pass">productMasterDataInfoTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:18 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:23 pm</span>
+<span class='badge badge-default'>00:00:04:859</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -936,9 +970,90 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:30 pm</td>
+        <td>1:27:23 pm</td>
         <td>
           Test passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="19"
+          author=""
+          tag="OpenCartRegressionSuite LoginPageTest"
+          device="">
+          <div class="test-detail">
+            <p class="name">forgotPwdLinkExistenceTest</p>
+            <p class="text-sm">
+              <span>1:27:24 pm</span> / <span>00:00:10:033</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">forgotPwdLinkExistenceTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:24 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:34 pm</span>
+<span class='badge badge-default'>00:00:10:033</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:27:34 pm</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Forgotten Password11 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.170, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/t2/myfd4x4j6pg...}, goog:chromeOptions: {debuggerAddress: localhost:50645}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50645/devtoo..., se:cdpVersion: 115.0.5790.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78a44d539a56aa754d848e03b5fc411e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.qa.opencart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:382)
+	at com.qa.opencart.pages.LoginPage.isForgotPwdLinkExist(LoginPage.java:53)
+	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistenceTest(LoginPageTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395054795.png' src="/Users/guddu/eclipse-workspace/POMSeries/screenshot/forgotPwdLinkExistenceTest_1691395054795.png">
+    <div class="title">forgotPwdLinkExistenceTest</div>
+    </div></div>
         </td>
       </tr>
   </tbody>
@@ -948,12 +1063,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="20"
           author=""
-          tag="OpenCartRegressionSuite ProductInfoPageTest"
+          tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">productImagesCountTest</p>
+            <p class="name">loginPageTitleTest</p>
             <p class="text-sm">
-              <span>8:07:30 pm</span> / <span>00:00:01:629</span>
+              <span>1:27:34 pm</span> / <span>00:00:00:017</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -961,16 +1076,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productImagesCountTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:30 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:32 pm</span>
-<span class='badge badge-default'>00:00:01:629</span>
+<h5 class="test-status text-pass">loginPageTitleTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:34 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:34 pm</span>
+<span class='badge badge-default'>00:00:00:017</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -979,7 +1094,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:32 pm</td>
+        <td>1:27:34 pm</td>
         <td>
           Test passed
         </td>
@@ -991,12 +1106,12 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
         </li>
         <li class="test-item"  status="pass" test-id="21"
           author=""
-          tag="OpenCartRegressionSuite ProductInfoPageTest"
+          tag="OpenCartRegressionSuite LoginPageTest"
           device="">
           <div class="test-detail">
-            <p class="name">productMasterDataInfoTest</p>
+            <p class="name">loginTest</p>
             <p class="text-sm">
-              <span>8:07:32 pm</span> / <span>00:00:01:839</span>
+              <span>1:27:34 pm</span> / <span>00:00:02:672</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -1004,16 +1119,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">productMasterDataInfoTest</h5>
-<span class='badge badge-success'>08.01.2023 8:07:32 pm</span>
-<span class='badge badge-danger'>08.01.2023 8:07:34 pm</span>
-<span class='badge badge-default'>00:00:01:839</span>
+<h5 class="test-status text-pass">loginTest</h5>
+<span class='badge badge-success'>08.07.2023 1:27:34 pm</span>
+<span class='badge badge-danger'>08.07.2023 1:27:37 pm</span>
+<span class='badge badge-default'>00:00:02:672</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">OpenCartRegressionSuite</span>
-<span class="badge badge-pill badge-default">ProductInfoPageTest</span></div>
+<span class="badge badge-pill badge-default">LoginPageTest</span></div>
 <div class="m-t-10 m-l-5"></div>
 </div>
 </div><div class="detail-body mt-4">
@@ -1022,7 +1137,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:07:34 pm</td>
+        <td>1:27:37 pm</td>
         <td>
           Test passed
         </td>
@@ -1053,14 +1168,16 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="test-detail">
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
 <p class="name">org.openqa.selenium.TimeoutException</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>org.openqa.selenium.TimeoutException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1071,11 +1188,32 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:07:09 pm</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:26:52 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:27:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:27:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:27:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>forgotPwdLinkExistenceTest</a>
 </td>
 </tr>
 </tbody>
@@ -1094,24 +1232,26 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>3</span>
+<span class='badge log pass-bg'>17</span>
 <span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
 </span>
-<p class="name">LoginPageTest</p>
-<p class="duration text-sm">4 tests</p>
+<p class="name">OpenCartRegressionSuite</p>
+<p class="duration text-sm">21 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>LoginPageTest</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
+<h4>OpenCartRegressionSuite</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1124,30 +1264,149 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:08 pm</td>
+<td>13:26:51 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>URLTest</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:07:09 pm</td>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:26:52 pm</td>
 <td>
 <a href="#" class="linked" test-id='2' id='2'>forgotPwdLinkExistenceTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:20 pm</td>
+<td>13:26:53 pm</td>
 <td>
-<a href="#" class="linked" test-id='11' id='11'>loginPageTitleTest</a>
+<a href="#" class="linked" test-id='3' id='3'>accPageHeadersCountTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:20 pm</td>
+<td>13:26:54 pm</td>
 <td>
-<a href="#" class="linked" test-id='12' id='12'>loginTest</a>
+<a href="#" class="linked" test-id='4' id='4'>accPageHeadersTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>accPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>isLogoutLinkExistTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>productHeaderTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:58 pm</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>productHeaderTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:27:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>productHeaderTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>productImagesCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>productImagesCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:27:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>productImagesCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>productMasterDataInfoTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:27:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>loginTest</a>
 </td>
 </tr>
 </tbody>
@@ -1178,51 +1437,130 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:16 pm</td>
+<td>13:26:53 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>accPageHeadersCountTest</a>
+<a href="#" class="linked" test-id='3' id='3'>accPageHeadersCountTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:18 pm</td>
+<td>13:26:54 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='7'>accPageHeadersTest</a>
+<a href="#" class="linked" test-id='4' id='4'>accPageHeadersTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:18 pm</td>
+<td>13:26:54 pm</td>
 <td>
-<a href="#" class="linked" test-id='8' id='8'>accPageTitleTest</a>
+<a href="#" class="linked" test-id='5' id='5'>accPageTitleTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:18 pm</td>
+<td>13:26:54 pm</td>
 <td>
-<a href="#" class="linked" test-id='9' id='9'>isLogoutLinkExistTest</a>
+<a href="#" class="linked" test-id='6' id='6'>isLogoutLinkExistTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:19 pm</td>
+<td>13:26:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>searchTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:26:58 pm</td>
 <td>
 <a href="#" class="linked" test-id='10' id='10'>searchTest</a>
 </td>
 </tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>3</span>
+</span>
+<p class="name">LoginPageTest</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>LoginPageTest</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:22 pm</td>
+<td>13:26:51 pm</td>
 <td>
-<a href="#" class="linked" test-id='13' id='13'>searchTest</a>
+<a href="#" class="linked" test-id='1' id='1'>URLTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:26:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:27:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>13:27:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>forgotPwdLinkExistenceTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>13:27:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>forgotPwdLinkExistenceTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:24 pm</td>
+<td>13:27:34 pm</td>
 <td>
-<a href="#" class="linked" test-id='15' id='15'>searchTest</a>
+<a href="#" class="linked" test-id='20' id='20'>loginPageTitleTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>loginTest</a>
 </td>
 </tr>
 </tbody>
@@ -1253,273 +1591,51 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:12 pm</td>
+<td>13:26:56 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>productHeaderTest</a>
+<a href="#" class="linked" test-id='8' id='8'>productHeaderTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:17 pm</td>
+<td>13:27:01 pm</td>
 <td>
-<a href="#" class="linked" test-id='6' id='6'>productHeaderTest</a>
+<a href="#" class="linked" test-id='11' id='11'>productHeaderTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:22 pm</td>
+<td>13:27:04 pm</td>
 <td>
-<a href="#" class="linked" test-id='14' id='14'>productHeaderTest</a>
+<a href="#" class="linked" test-id='13' id='13'>productHeaderTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:26 pm</td>
+<td>13:27:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>productImagesCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>productImagesCountTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:27:16 pm</td>
 <td>
 <a href="#" class="linked" test-id='17' id='17'>productImagesCountTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:29 pm</td>
+<td>13:27:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='19' id='19'>productImagesCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:30 pm</td>
-<td>
-<a href="#" class="linked" test-id='20' id='20'>productImagesCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='21' id='21'>productMasterDataInfoTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>20</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">OpenCartRegressionSuite</p>
-<p class="duration text-sm">21 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>OpenCartRegressionSuite</h4>
-<span status="pass" class='badge log pass-bg'>20 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:08 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>URLTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>20:07:09 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>forgotPwdLinkExistenceTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:12 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>productHeaderTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:15 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>userRegistrationTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:16 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>accPageHeadersCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:17 pm</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>productHeaderTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:18 pm</td>
-<td>
-<a href="#" class="linked" test-id='7' id='7'>accPageHeadersTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:18 pm</td>
-<td>
-<a href="#" class="linked" test-id='8' id='8'>accPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:18 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>isLogoutLinkExistTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='10' id='10'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='11' id='11'>loginPageTitleTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='12' id='12'>loginTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:22 pm</td>
-<td>
-<a href="#" class="linked" test-id='13' id='13'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:22 pm</td>
-<td>
-<a href="#" class="linked" test-id='14' id='14'>productHeaderTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='15' id='15'>searchTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>userRegistrationTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:26 pm</td>
-<td>
-<a href="#" class="linked" test-id='17' id='17'>productImagesCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>userRegistrationTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='19' id='19'>productImagesCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:30 pm</td>
-<td>
-<a href="#" class="linked" test-id='20' id='20'>productImagesCountTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:32 pm</td>
-<td>
-<a href="#" class="linked" test-id='21' id='21'>productMasterDataInfoTest</a>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">RegisterPageTest</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>RegisterPageTest</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:15 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>userRegistrationTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:24 pm</td>
-<td>
-<a href="#" class="linked" test-id='16' id='16'>userRegistrationTest</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:07:29 pm</td>
-<td>
-<a href="#" class="linked" test-id='18' id='18'>userRegistrationTest</a>
+<a href="#" class="linked" test-id='18' id='18'>productMasterDataInfoTest</a>
 </td>
 </tr>
 </tbody>
@@ -1539,19 +1655,19 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 1, 2023 08:06:56 pm</h3>
+<h3>Aug 7, 2023 01:26:35 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 1, 2023 08:07:34 pm</h3>
+<h3>Aug 7, 2023 01:27:37 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>20</h3>
+<h3>17</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -1573,13 +1689,13 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='95%'>
-<b>20</b> tests passed
+<div><small data-tooltip='80%'>
+<b>17</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='4%'><b>1</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>3</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -1596,10 +1712,10 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='95%'><b>20</b> events passed</small></div>
+<div><small data-tooltip='80%'><b>17</b> events passed</small></div>
 <div>
 <small data-tooltip='4%'><b>1</b> events failed,
-<b data-tooltip='%'>0</b> others
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -1615,7 +1731,7 @@ Session ID: 1eccf0ee64d3f9db2b6f1357fcb2562d
 </div></div>
 <script>
 var timeline = {
-"URLTest":0.487,"forgotPwdLinkExistenceTest":10.319,"productHeaderTest":4.762,"userRegistrationTest":9.728,"accPageHeadersCountTest":1.382,"productHeaderTest":4.932,"accPageHeadersTest":0.301,"accPageTitleTest":0.047,"isLogoutLinkExistTest":0.647,"searchTest":2.912,"loginPageTitleTest":0.064,"loginTest":5.439,"searchTest":1.969,"productHeaderTest":2.69,"searchTest":0.91,"userRegistrationTest":4.361,"productImagesCountTest":2.679,"userRegistrationTest":2.655,"productImagesCountTest":1.475,"productImagesCountTest":1.629,"productMasterDataInfoTest":1.839
+"URLTest":0.534,"forgotPwdLinkExistenceTest":10.468,"accPageHeadersCountTest":0.896,"accPageHeadersTest":0.258,"accPageTitleTest":0.023,"isLogoutLinkExistTest":0.572,"searchTest":1.735,"productHeaderTest":5.279,"searchTest":1.253,"searchTest":1.373,"productHeaderTest":2.809,"forgotPwdLinkExistenceTest":10.206,"productHeaderTest":4.416,"productImagesCountTest":3.485,"productImagesCountTest":4.069,"forgotPwdLinkExistenceTest":10.387,"productImagesCountTest":1.642,"productMasterDataInfoTest":4.859,"forgotPwdLinkExistenceTest":10.033,"loginPageTitleTest":0.017,"loginTest":2.672
 };
 </script>
 <div class="row">
@@ -1625,12 +1741,12 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>LoginPageTest</td>
-<td>3</td>
+<td>OpenCartRegressionSuite</td>
+<td>17</td>
 <td>1</td>
+<td>3</td>
 <td>0</td>
-<td>0</td>
-<td>75%</td>
+<td>80.952%</td>
 </tr>
 <tr>
 <td>AccountsPageTest</td>
@@ -1641,24 +1757,16 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
+<td>LoginPageTest</td>
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>42.857%</td>
+</tr>
+<tr>
 <td>ProductInfoPageTest</td>
 <td>7</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>OpenCartRegressionSuite</td>
-<td>20</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>95.238%</td>
-</tr>
-<tr>
-<td>RegisterPageTest</td>
-<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -1707,10 +1815,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 20,
+passParent: 17,
 failParent: 1,
 warningParent: 0,
-skipParent: 0,
+skipParent: 3,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -1724,10 +1832,10 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 20,
+passEvents: 17,
 failEvents: 1,
 warningEvents: 0,
-skipEvents: 0,
+skipEvents: 3,
 infoEvents: 0
 };
 </script>        </div>

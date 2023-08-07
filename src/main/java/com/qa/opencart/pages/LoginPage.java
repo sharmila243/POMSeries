@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.constants.AppConstant;
 import com.qa.opencart.utils.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class LoginPage { //Example of Encapsulation
 		//PageClass/ PageLibrary/ PageObject for the Login Page
 	
@@ -17,7 +19,7 @@ public class LoginPage { //Example of Encapsulation
 	private By emailId = By.id("input-email");
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[contains(@class, 'btn-primary')]");
-	private By forgotPwdLink = By.linkText("Forgotten Password");
+	private By forgotPwdLink = By.linkText("Forgotten Password11");
 	private By registerLink = By.linkText("Register");
 	
 	
@@ -32,22 +34,26 @@ public class LoginPage { //Example of Encapsulation
 	
 	
 	//3. public Page Actions - behavior/methods
+	@Step("...Getting loginPage title...")
 	public String getLoginPageTitle() {
 		String title = eleUtil.waitForTitleIs(AppConstant.LOGIN_PAGE_TITLE, AppConstant.SHORT_TIME_OUT);
 		System.out.println(title);
 		return title;
 	}
 	
+	@Step("...Getting loginPage URL...")
 	public String getLoginPageURL() {
 		String url = eleUtil.waitForURLContains(AppConstant.SHORT_TIME_OUT, AppConstant.LOGIN_PAGE_URL_FRACTION);
 		System.out.println(url);
 		return url;
 	}	
 	
+	@Step("...Existence of forgot password link...")	
 	public boolean isForgotPwdLinkExist() {	
 		return eleUtil.waitForElementVisible(forgotPwdLink, AppConstant.MEDIUM_TIME_OUT).isDisplayed();
 	}
 	
+	@Step("...Logging in with valid credentials- username:{0} and password:{1}...")
 	public AccountsPage doLogin(String userName, String pwd) {
 		System.out.println("App Credentials are: " +userName +":"+ pwd );
 		
@@ -62,7 +68,7 @@ public class LoginPage { //Example of Encapsulation
 		return new AccountsPage(driver);
 	}
 	
-	
+	@Step("...Navigating to Registration Page...")
 	public RegisterPage navigateToRegisterPage() {
 		eleUtil.waitForElementToBeClickable(AppConstant.SHORT_TIME_OUT, registerLink);
 		

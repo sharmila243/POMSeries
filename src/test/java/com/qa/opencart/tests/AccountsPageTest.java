@@ -10,6 +10,12 @@ import org.testng.annotations.Test;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstant;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Story;
+
+@Epic("EPIC - 101: Design of AccountPage for OpenCart Application")
+@Story("US - 201: implement AccountPage features for OpenCart Application")
+
 public class AccountsPageTest extends BaseTest{
 	
 	@BeforeClass
