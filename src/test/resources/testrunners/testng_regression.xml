@@ -47,7 +47,7 @@
 			- Now we have thread count = 4, limited threads
 			- what
 	if have more number of threads??? - Problems
- 			- Deadlock Conditio
+ 			- Deadlock Condition
  				-
 	Now for the 4 tests, we have 4 test results PASS/FAIL - we've to combine all
 	of them for Extent/Allure/html reports
