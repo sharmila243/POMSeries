@@ -14,8 +14,7 @@ public class LoginPage { //Example of Encapsulation
 	private WebDriver driver;
 	private ElementUtil eleUtil;
 	
-	//1. private By locators - page locators/page elements
-	
+	//1. private By locators - page locators/page elements	
 	private By emailId = By.id("input-email");
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[contains(@class, 'btn-primary')]");
