@@ -76,7 +76,7 @@
 							- Surefireplugin will run the testcases
 				based on testng.xml that we've created
 							- check
-				suiteXlFile in Configuartion
+				suiteXmlFile in Configuartion
 					-->
 				<version>2.20</version>
 
